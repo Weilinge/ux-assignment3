@@ -197,6 +197,263 @@
       </div>
     </div>
   </section>
+  <!-- ORDER PAGE -->
+  <section id="page-order" class="page">
+    <!-- Mobile Order -->
+    <div class="order-mobile">
+      <div class="order-topbar">
+        <button class="back-btn" data-nav="locations">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#372a2a" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <div class="order-topbar-info">
+          <span class="order-topbar-name" id="order-location-name">Belles Fitzroy</span>
+          <span class="order-topbar-sub">pick up only</span>
+        </div>
+        <div class="order-topbar-icons">
+          <button class="icon-btn" id="btn-search-mobile">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#372a2a" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="order-schedule">
+        <span class="order-schedule-label">Scheduled for</span>
+        <div class="order-schedule-value">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#372a2a" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <span>Tue, Apr 07 at 8:45pm (AEST)</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#372a2a" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+      </div>
+      <div class="order-body-mobile">
+        <div class="order-categories" id="order-categories-mobile">
+          <!-- filled by JS -->
+        </div>
+        <div class="order-menu-items" id="order-menu-mobile">
+          <!-- filled by JS -->
+        </div>
+      </div>
+      <div class="checkout-bar" id="checkout-bar">
+        <div class="checkout-bar-left">
+          <div class="checkout-icon-wrap">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+            <span class="checkout-badge" id="checkout-badge" style="display:none">0</span>
+          </div>
+          <span class="checkout-text" id="checkout-text">Checkout</span>
+        </div>
+        <span class="checkout-price" id="checkout-price"></span>
+      </div>
+    </div>
+
+    <!-- Desktop Order -->
+    <div class="order-desktop">
+      <div class="order-desktop-left">
+        <div class="order-location-banner">
+          <div class="order-location-banner-overlay"></div>
+          <div class="order-location-banner-content">
+            <button class="back-btn back-btn--white" data-nav="locations">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+            <div class="order-location-center">
+              <div class="order-location-name-row" id="order-location-name-row">
+                <h2 class="order-desktop-name" id="order-desktop-name">Belles Fitzroy</h2>
+                <button class="order-location-dropdown-btn" id="order-location-dropdown-btn" aria-label="Switch location">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+              </div>
+              <span class="order-desktop-pickup">pick up only</span>
+              <span class="order-desktop-address" id="order-desktop-address"></span>
+              <div class="order-location-dropdown" id="order-location-dropdown" style="display:none">
+                <!-- filled by JS -->
+              </div>
+            </div>
+            <div class="order-desktop-header-right">
+              <button class="icon-btn icon-btn--white" id="btn-search-desktop">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="order-desktop-schedule">
+          <span class="order-schedule-label">Scheduled for</span>
+          <div class="order-schedule-value">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#372a2a" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            <span>Tue, Apr 07 at 8:45pm (AEST)</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#372a2a" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+        </div>
+        <div class="order-desktop-categories" id="order-categories-desktop">
+          <!-- filled by JS -->
+        </div>
+        <div class="order-desktop-menu" id="order-menu-desktop">
+          <!-- filled by JS -->
+        </div>
+      </div>
+      <div class="order-desktop-cart" id="order-cart-desktop">
+        <h3 class="cart-panel-title">Choose a pick-up time</h3>
+        <div class="cart-pickup-time">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#372a2a" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <span>Tue, Apr 07 at 8:45pm (AEST)</span>
+        </div>
+        <div class="cart-content" id="cart-content-desktop">
+          <div class="cart-empty" id="cart-empty-desktop">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#ccc" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+            <p>Your cart is empty</p>
+          </div>
+          <div class="cart-items" id="cart-items-desktop" style="display:none">
+            <!-- filled by JS -->
+          </div>
+        </div>
+        <div class="cart-footer" id="cart-footer-desktop" style="display:none">
+          <div class="cart-subtotal">
+            <span>Subtotal</span>
+            <span id="cart-subtotal-val">$0.00</span>
+          </div>
+          <div class="cart-surcharge">
+            <span>Card surcharge</span>
+            <span id="cart-surcharge-val">$0.00</span>
+          </div>
+          <button class="btn-checkout-desktop" data-nav="confirm">Checkout</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CART SLIDE-UP (Mobile) -->
+  <div class="cart-slideup" id="cart-slideup">
+    <div class="cart-slideup-overlay" id="cart-slideup-overlay"></div>
+    <div class="cart-slideup-panel" id="cart-slideup-panel">
+      <div class="cart-slideup-header">
+        <h3>Selected</h3>
+        <button class="cart-slideup-close" id="cart-slideup-close">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#372a2a" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div class="cart-slideup-items" id="cart-slideup-items">
+        <!-- filled by JS -->
+      </div>
+      <button class="cart-slideup-checkout" data-nav="confirm">
+        <span id="slideup-checkout-text">Checkout</span>
+        <span id="slideup-checkout-price"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- AI SEARCH OVERLAY -->
+  <div class="ai-overlay" id="ai-overlay">
+    <div class="ai-overlay-inner">
+      <div class="ai-search-bar">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" class="ai-search-input" id="ai-search-input" placeholder="Search menu...">
+        <button class="ai-search-submit-btn" id="ai-search-submit-btn">Search</button>
+        <button class="ai-cancel-btn" id="ai-cancel-btn">Cancel</button>
+      </div>
+      <div class="ai-content" id="ai-content">
+        <p class="ai-section-title" id="ai-section-title">HISTORY</p>
+        <div class="ai-chat" id="ai-chat-area">
+          <div class="ai-message ai-message--user">
+            <p>Please recommend to me a meal combination within $40 that can satisfy my hunger.</p>
+          </div>
+          <div class="ai-message ai-message--bot">
+            <p>The following combinations can meet your needs:</p>
+            <div class="ai-recommendations" id="ai-recommendations">
+              <!-- filled by JS -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONFIRM ORDER PAGE -->
+  <section id="page-confirm" class="page">
+    <div class="confirm-mobile">
+      <div class="confirm-topbar">
+        <button class="back-btn" data-nav="order">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#372a2a" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <span class="confirm-topbar-title">Order Detail</span>
+      </div>
+      <div class="confirm-content">
+        <h2 class="confirm-heading">Confirm your order</h2>
+        <div class="confirm-location">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#ec1f24" stroke="none"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          <span id="confirm-location-name">Belles Fitzroy</span>
+        </div>
+        <div class="confirm-schedule">
+          <span class="confirm-schedule-label">Scheduled for</span>
+          <div class="confirm-schedule-value">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#372a2a" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            <span>Tue, Apr 07 at 8:45pm (AEST)</span>
+          </div>
+        </div>
+        <div class="confirm-items" id="confirm-items">
+          <!-- filled by JS -->
+        </div>
+        <div class="confirm-total">
+          <span>Total</span>
+          <span id="confirm-total-val">$0.00</span>
+        </div>
+        <button class="btn-pay" data-nav="paid">Pay</button>
+      </div>
+    </div>
+    <div class="confirm-desktop">
+      <div class="confirm-desktop-header">
+        <button class="back-btn" data-nav="order">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#372a2a" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <span class="confirm-topbar-title">Order Detail</span>
+      </div>
+      <div class="confirm-desktop-body">
+        <div class="confirm-desktop-left">
+          <h2 class="confirm-heading">Confirm your order</h2>
+          <div class="confirm-location">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#ec1f24" stroke="none"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            <span id="confirm-desktop-location-name">Belles Fitzroy</span>
+          </div>
+          <div class="confirm-schedule">
+            <span class="confirm-schedule-label">Scheduled for</span>
+            <div class="confirm-schedule-value">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#372a2a" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              <span>Tue, Apr 07 at 8:45pm (AEST)</span>
+            </div>
+          </div>
+        </div>
+        <div class="confirm-desktop-center">
+          <div class="confirm-items" id="confirm-items-desktop">
+            <!-- filled by JS -->
+          </div>
+          <div class="confirm-breakdown">
+            <div class="confirm-breakdown-row">
+              <span>Subtotal</span>
+              <span id="confirm-subtotal-desktop-val">$0.00</span>
+            </div>
+            <div class="confirm-breakdown-row">
+              <span>Card surcharge</span>
+              <span id="confirm-surcharge-desktop-val">$0.00</span>
+            </div>
+            <div class="confirm-total">
+              <span>Total</span>
+              <span id="confirm-total-desktop-val">$0.00</span>
+            </div>
+          </div>
+        </div>
+        <div class="confirm-desktop-right">
+          <p class="confirm-payment-label">Payment methods</p>
+          <div class="confirm-payment-icons">
+            <button class="payment-icon payment-icon--selectable payment-icon--active" data-payment="credit">
+              <img src="assets/images/credit-card-icon.svg" alt="Credit Card">
+            </button>
+            <button class="payment-icon payment-icon--selectable" data-payment="applepay">
+              <img src="assets/images/apple-pay-icon.svg" alt="Apple Pay">
+            </button>
+            <button class="payment-icon payment-icon--selectable" data-payment="paypal">
+              <img src="assets/images/paypal-logo-icon.svg" alt="PayPal">
+            </button>
+          </div>
+        </div>
+      </div>
+      <button class="btn-pay btn-pay--desktop" data-nav="paid">Pay</button>
+    </div>
+  </section>
 
         
 </body>
